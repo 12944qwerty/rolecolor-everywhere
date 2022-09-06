@@ -242,8 +242,6 @@ module.exports = class RoleColorEverywhere extends Plugin {
   }
 
   async injectStatus () {
-    return;
-    // eslint-disable-next-line no-unreachable
     const _this = this;
     const MemberListItem = await getModuleByDisplayName('MemberListItem');
     await inject('rce-status', MemberListItem.prototype, 'renderActivity', function (_, res) {
@@ -264,8 +262,6 @@ module.exports = class RoleColorEverywhere extends Plugin {
 
   // todo: fix
   async injectUserPopout () {
-    return;
-    // eslint-disable-next-line no-unreachable
     const _this = this;
     const UserPopout = await this._extractUserPopout();
 
